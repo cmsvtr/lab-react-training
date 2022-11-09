@@ -1,38 +1,255 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.id-card {
+  display: flex;
+  height: 12vh;
+  border: 2px solid black;
+  margin: 1vh 1vh 0 1vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.id-card img {
+  align-items: center;
+  margin: 0.5vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.id-info {
+  margin: 0.5vh 0;
+}
+
+.id-info p {
+  text-align: left;
+  font-size: 1.5vh;
+}
+
+.id-info span {
+  font-weight: bold;
+}
+
+.iter2 {
+  margin: 5vh 0;
+}
+
+.greeting-card {
+  display: flex;
+  align-items: center;
+  margin: 1vh 1vh 0 1vh;
+  height: 8vh;
+  border: 2px solid black;
+}
+
+.greeting-card p {
+  margin: 0 0 0 1vh;
+  font-size: 4vh;
+}
+
+.random-card {
+  display: flex;
+  align-items: center;
+  margin: 1vh 1vh 0 1vh;
+  height: 8vh;
+  border: 2px solid black;
+}
+
+.random-card p {
+  margin: 0 0 0 1vh;
+  font-size: 3vh;
+}
+
+.iter4 {
+  margin: 5vh 0;
+}
+
+.color-card div {
+  margin: 1vh 1vh 0 1vh;
+  height: 8vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.iter5 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.credit-card * {
+  font-family: sans-serif;
+}
+
+.credit-card {
+  height: 18vh;
+  width: 34vh;
+  border-radius: 3%; 
+}
+
+.credit-card img {
+  display: flex;
+  justify-content: flex-end;
+  width: 7vh;
+  margin: 1vh 0 1vh 25vh;
+}
+.credit-card h3 {
+  margin: 5vh 0 1vh 0;
+  font-size: 3vh;
+}
+
+.credit-card p {
+  font-size: 1vh;
+  text-align: left;
+  margin: 0 0 0 2vh;
+}
+.iter6 {
+  margin: 5vh;
+}
+.rating-card {
+  margin: 0.5vh;
+}
+
+.driver-card *{
+  text-align: left;
+  color: white;
+  font-family: sans-serif;
+}
+
+.iter7 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+
+.driver-card {
+  display: flex;
+  justify-content: flex-start;
+  height: 22vh;
+  width: 80vh;
+  background-color: rgb(180, 115, 177);
+  border-radius: 10px;
+  padding: 5vh;
+  margin: 5vh;
+  box-shadow: 5px 5px 2px 2px rgba(63, 60, 60, 0.281);
+}
+
+.driver-card img{
+  border-radius: 50%;
+  align-items: left;
+  width: 12vh;
+  margin-left: 11vh;
+}
+
+.driver-info {
+  margin-left: 2vh;
+}
+
+.iter8 button {
+  height: 10vh;
+  width: 20vh;
+  margin: 5vh;
+  border: none;
+  border-radius: 5px;
+  font-family: sans-serif;
+  font-size: 3.5vh;
+  color: azure;
+}
+
+.iter9 {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.iter9 img {
+  width: 15vh;
 }
 
-.App-link {
-  color: #61dafb;
+.dice-card {
+  height: 30vh;
+  width: 70vh;
+  background-color: beige;
+  border-radius: 8px;
+  padding: 4vh;
+  box-shadow: 8px 8px 3px grey;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.iter10 {
+  display: flex;
+  justify-content: center;
+  padding: 5vh;
+}
+.iter10 img {
+  width: 15vh;
+}
+
+.dice2-card {
+  height: 30vh;
+  width: 70vh;
+  background-color: beige;
+  border-radius: 8px;
+  padding: 4vh;
+  box-shadow: 8px 8px 3px grey;
+}
+
+.iter11 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5vh;
+}
+.iter11 img {
+  width: 25vh;
+  margin: 5vh 0 0 0;
+  border-radius: 15vh;
+}
+
+.carousel-card {
+  height: 50vh;
+  width: 50vh;
+  background-color: rgba(34, 150, 228, 0.658);
+  border-radius: 8px;
+  padding: 4vh;
+  box-shadow: 8px 8px 3px grey;
+}
+
+.carousel-card button {
+  margin: 2vh;
+  width: 10vh;
+}
+
+.numbers-table {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  flex-wrap: wrap;
+  height: fit-content;
+  background-color: rgba(0, 0, 0, 0.863);
+  border-radius: 8px;
+  padding: 1vh;
+  margin: 5vh 20vh;
+  box-shadow: 8px 8px 3px grey;
+}
+
+.numbers-table p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 25vh;
+  border-radius: 10vh;
+  font-size: 10vh;
+  margin: 2vh;
+}
+
+.square {
+  background-color: azure;
+}
+
+.red-square {
+  background-color: crimson;
+  color: azure;
 }
