@@ -253,3 +253,41 @@
   background-color: crimson;
   color: azure;
 }
+
+.iter13 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.facebook-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  height: 22vh;
+  width: 60vh;
+  background-color: rgb(65, 66, 146);
+  border-radius: 10px;
+  padding: 5vh;
+  margin: 5vh;
+  box-shadow: 5px 5px 2px 2px rgba(63, 60, 60, 0.281);
+}
+
+.facebook-card img{
+  border-radius: 50%;
+  align-items: left;
+  width: 14vh;
+  margin-left: 5vh;
+}
+
+.facebook-info {
+  margin-left: 2vh;
+  color: azure;
+  text-align: left;
+}
+
+.facebook-info span {
+  font-weight: bold;
+}

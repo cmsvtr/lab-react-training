@@ -11,6 +11,7 @@ import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
+import Facebook from './components/Facebook';
 
 import Dice from './components/Dice';
 import Dice1 from './assets/images/dice1.png';
@@ -20,6 +21,7 @@ import Dice4 from './assets/images/dice4.png';
 import Dice5 from './assets/images/dice5.png';
 import Dice6 from './assets/images/dice6.png';
 import Dice0 from './assets/images/dice-empty.png';
+import profiles from './data/berlin.json'
 
 function App() {
   return (
@@ -181,6 +183,12 @@ function App() {
 
         <NumbersTable limit={12} />
         <NumbersTable limit={9} />   
+
+      </div>
+
+      <div className='iter13'>
+
+        <Facebook students={profiles}/>
 
       </div>
 

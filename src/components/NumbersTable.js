@@ -6,7 +6,7 @@ function NumbersTable (props) {
     return (
         <div className='numbers-table'>
             {arr.map(e => {
-                return (e+1)%2 ? (<p className='square'>{e+1}</p>) : (<p className='red-square'>{e+1}</p>)
+                return (e+1)%2 ? (<p className='square' key={e}>{e+1}</p>) : (<p className='red-square' key={e}>{e+1}</p>)
                 })
             }    
 
